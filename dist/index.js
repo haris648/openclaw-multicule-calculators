@@ -38,7 +38,7 @@ function apResult(subject, slug, sections, cutoffs) {
 export default defineToolPlugin({
     id: "multicule-calculators",
     name: "Multicule Calculators",
-    description: "Deterministic calculators for agents: AP exam score predictions (World History, Calculus AB, English Language, Seminar), Australian contractor pay vs salary, and alcohol dilution.",
+    description: "Deterministic calculators for agents: AP exam score predictions (World History, Calculus AB, English Language, Physics 1, Seminar, Research), Australian contractor pay vs salary, and alcohol dilution.",
     tools: (tool) => [
         tool({
             name: "multicule_ap_world_history_score",
@@ -103,6 +103,43 @@ export default defineToolPlugin({
                 { label: "Performance Task 1", earned: p.task1Percent, max: 100, weight: 20 },
                 { label: "Performance Task 2", earned: p.task2Percent, max: 100, weight: 35 },
                 { label: "End-of-course exam", earned: p.examPercent, max: 100, weight: 45 },
+            ], [75, 62, 45, 30]),
+        }),
+        tool({
+            name: "multicule_ap_physics_1_score",
+            label: "AP Physics 1 Score",
+            description: "Predict an AP Physics 1: Algebra-Based score (1-5) from MCQ correct (of 40) and the four free-response scores: Mathematical Routines (of 10), Translation Between Representations (of 12), Experimental Design and Analysis (of 10), Qualitative/Quantitative Translation (of 8).",
+            parameters: Type.Object({
+                mcqCorrect: Type.Number({ description: "Multiple-choice questions correct, 0-40." }),
+                mathematicalRoutines: Type.Number({ description: "Mathematical Routines FRQ score, 0-10." }),
+                translationBetweenRepresentations: Type.Number({ description: "Translation Between Representations FRQ score, 0-12." }),
+                experimentalDesign: Type.Number({ description: "Experimental Design and Analysis FRQ score, 0-10." }),
+                qualitativeQuantitative: Type.Number({ description: "Qualitative/Quantitative Translation FRQ score, 0-8." }),
+            }),
+            execute: (p) => apResult("AP Physics 1: Algebra-Based", "ap-physics-1-score-calculator", [
+                { label: "Multiple choice", earned: p.mcqCorrect, max: 40, weight: 50 },
+                {
+                    label: "Free response",
+                    earned: clamp(p.mathematicalRoutines, 10) +
+                        clamp(p.translationBetweenRepresentations, 12) +
+                        clamp(p.experimentalDesign, 10) +
+                        clamp(p.qualitativeQuantitative, 8),
+                    max: 40,
+                    weight: 50,
+                },
+            ], [70, 55, 40, 27]),
+        }),
+        tool({
+            name: "multicule_ap_research_score",
+            label: "AP Research Score",
+            description: "Predict an AP Research score (1-5) from the academic paper result and the presentation and oral defense result, each as a percentage.",
+            parameters: Type.Object({
+                paperPercent: Type.Number({ description: "Academic paper result, 0-100%." }),
+                presentationPercent: Type.Number({ description: "Presentation and oral defense result, 0-100%." }),
+            }),
+            execute: (p) => apResult("AP Research", "ap-research-score-calculator", [
+                { label: "Academic paper", earned: p.paperPercent, max: 100, weight: 75 },
+                { label: "Presentation and oral defense", earned: p.presentationPercent, max: 100, weight: 25 },
             ], [75, 62, 45, 30]),
         }),
         tool({

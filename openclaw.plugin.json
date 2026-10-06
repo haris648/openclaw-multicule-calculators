@@ -1,16 +1,24 @@
 {
   "id": "multicule-calculators",
   "name": "Multicule Calculators",
-  "description": "Deterministic calculators for agents: AP exam score predictions (World History, Calculus AB, English Language, Seminar), Australian contractor pay vs salary, and alcohol dilution.",
-  "version": "0.1.0",
-  "configSchema": { "type": "object", "additionalProperties": false, "properties": {} },
-  "activation": { "onStartup": true },
+  "description": "Deterministic calculators for agents: AP exam score predictions (World History, Calculus AB, English Language, Physics 1, Seminar, Research), Australian contractor pay vs salary, and alcohol dilution.",
+  "version": "0.2.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "activation": {
+    "onStartup": true
+  },
   "contracts": {
     "tools": [
       "multicule_ap_world_history_score",
       "multicule_ap_calculus_ab_score",
       "multicule_ap_english_language_score",
       "multicule_ap_seminar_score",
+      "multicule_ap_physics_1_score",
+      "multicule_ap_research_score",
       "multicule_contractor_pay",
       "multicule_alcohol_dilution"
     ]

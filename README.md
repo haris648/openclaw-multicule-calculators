@@ -11,7 +11,9 @@ Built by [Multicule](https://multicule.com), a collection of free online calcula
 | `multicule_ap_world_history_score` | Predicts an AP World History: Modern score (1–5) from MCQ, SAQ, DBQ and LEQ results |
 | `multicule_ap_calculus_ab_score` | Predicts an AP Calculus AB score from MCQ and FRQ points |
 | `multicule_ap_english_language_score` | Predicts an AP Lang score from MCQ and the three essay scores |
+| `multicule_ap_physics_1_score` | Predicts an AP Physics 1 score from MCQ and the four FRQ types |
 | `multicule_ap_seminar_score` | Predicts an AP Seminar score from both performance tasks and the exam |
+| `multicule_ap_research_score` | Predicts an AP Research score from the academic paper and oral defense |
 | `multicule_contractor_pay` | Converts an Australian contractor hourly/daily rate into an equivalent salary (super, billable days, GST threshold, break-even vs a salary offer) |
 | `multicule_alcohol_dilution` | Calculates how much water to add to reach a target ABV |
 
@@ -24,7 +26,9 @@ Prefer a browser? Each tool has a free web calculator with worked examples and s
 - [AP World History score calculator](https://multicule.com/ap-world-history-score-calculator/)
 - [AP Calculus AB score calculator](https://multicule.com/ap-calculus-ab-score-calculator/)
 - [AP English Language score calculator](https://multicule.com/ap-english-language-and-composition-score-calculator/)
+- [AP Physics 1 score calculator](https://multicule.com/ap-physics-1-score-calculator/)
 - [AP Seminar score calculator](https://multicule.com/ap-seminar-score-calculator/)
+- [AP Research score calculator](https://multicule.com/ap-research-score-calculator/)
 - [Contractor pay calculator (Australia)](https://multicule.com/contractor-pay-calculator/)
 - [Alcohol dilution calculator](https://multicule.com/alcohol-dilution-calculator/)
 
