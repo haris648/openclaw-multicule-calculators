@@ -37,6 +37,18 @@
   "openclaw": {
     "extensions": [
       "./dist/index.js"
-    ]
+    ],
+    "compat": {
+      "pluginApi": ">=2026.5.17",
+      "minGatewayVersion": "2026.5.17"
+    },
+    "build": {
+      "openclawVersion": "2026.9.8",
+      "pluginSdkVersion": "2026.9.8"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haris648/openclaw-multicule-calculators"
   }
 }
