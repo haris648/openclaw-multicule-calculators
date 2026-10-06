@@ -1,0 +1,20 @@
+{
+  "name": "@multicule/openclaw-calculators",
+  "version": "0.1.0",
+  "description": "OpenClaw tool plugin: AP score predictors, Australian contractor pay and alcohol dilution calculators by Multicule.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Syed Haris (https://multicule.com)",
+  "homepage": "https://multicule.com",
+  "keywords": ["openclaw", "openclaw-plugin", "calculator", "ap-exam", "contractor-pay", "alcohol-dilution"],
+  "files": ["dist", "openclaw.plugin.json", "README.md"],
+  "scripts": {
+    "build": "tsc",
+    "plugin:build": "npm run build && openclaw plugins build --entry ./dist/index.js",
+    "plugin:validate": "npm run plugin:build && openclaw plugins validate --entry ./dist/index.js"
+  },
+  "dependencies": { "typebox": "^1.1.38" },
+  "peerDependencies": { "openclaw": ">=2026.5.17" },
+  "devDependencies": { "typescript": "^5.6.0" },
+  "openclaw": { "extensions": ["./dist/index.js"] }
+}
