@@ -35,7 +35,7 @@ Prefer a browser? Each tool has a free web calculator with worked examples and s
 ## Install
 
 ```bash
-openclaw plugins install clawhub:haris648/openclaw-multicule-calculators
+openclaw plugins install clawhub:openclaw-multicule-calculators
 ```
 
 No configuration or API keys needed. Everything runs locally.
