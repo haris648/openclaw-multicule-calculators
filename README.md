@@ -2,7 +2,7 @@
 
 Deterministic calculator tools for OpenClaw agents. Instead of the model doing arithmetic in its head (and occasionally getting it wrong), your agent calls a tool and gets an exact, structured answer.
 
-Built by [Multicule](https://multicule.com), a collection of free online calculators.
+Built by [INeedCalc](https://ineedcalc.com/), a collection of free online calculators.
 
 ## Tools
 
@@ -23,14 +23,14 @@ Every result includes a link to the matching web calculator so users can double-
 
 Prefer a browser? Each tool has a free web calculator with worked examples and score tables:
 
-- [AP World History score calculator](https://multicule.com/ap-world-history-score-calculator/)
-- [AP Calculus AB score calculator](https://multicule.com/ap-calculus-ab-score-calculator/)
-- [AP English Language score calculator](https://multicule.com/ap-english-language-and-composition-score-calculator/)
-- [AP Physics 1 score calculator](https://multicule.com/ap-physics-1-score-calculator/)
-- [AP Seminar score calculator](https://multicule.com/ap-seminar-score-calculator/)
-- [AP Research score calculator](https://multicule.com/ap-research-score-calculator/)
-- [Contractor pay calculator (Australia)](https://multicule.com/contractor-pay-calculator/)
-- [Alcohol dilution calculator](https://multicule.com/alcohol-dilution-calculator/)
+- [AP World History score calculator](https://ineedcalc.com/ap-world-history-score-calculator/)
+- [AP Calculus AB score calculator](https://ineedcalc.com/ap-calculus-ab-score-calculator/)
+- [AP English Language score calculator](https://ineedcalc.com/ap-english-language-and-composition-score-calculator/)
+- [AP Physics 1 score calculator](https://ineedcalc.com/ap-physics-1-score-calculator/)
+- [AP Seminar score calculator](https://ineedcalc.com/ap-seminar-score-calculator/)
+- [AP Research score calculator](https://ineedcalc.com/ap-research-score-calculator/)
+- [Contractor pay calculator (Australia)](https://ineedcalc.com/contractor-pay-calculator/)
+- [Alcohol dilution calculator](https://ineedcalc.com/alcohol-dilution-calculator/)
 
 ## Install
 
